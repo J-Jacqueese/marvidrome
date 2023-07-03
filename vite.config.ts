@@ -14,12 +14,4 @@ export default defineConfig({
 
     ]
   },
-
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: "@import 'src/views/SocialMedia/style.scss';"
-      }
-    }
-  }
 })

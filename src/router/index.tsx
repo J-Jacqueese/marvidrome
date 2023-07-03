@@ -14,10 +14,6 @@ const CSS = lazy(() => import('../views/Note/CSS'))
 const JavaScript = lazy(() => import('../views/Note/JavaScript'))
 const NReact = lazy(() => import('../views/Note/React'))
 const Vue = lazy(() => import('../views/Note/Vue'))
-// 社交
-const SocialMedia = lazy(() => import('../views/SocialMedia'))
-
-const SMProfile = lazy(() => import('../views/SocialMedia/ccnps/Profile'))
 
 // 跟顶
 const routes: RouteObject[] = [
@@ -45,16 +41,6 @@ const routes: RouteObject[] = [
   {
     path: '/register',
     element: <Register />
-  },
-  {
-    path: '/social',
-    element: <SocialMedia />,
-    children: [
-      {
-        path: '/social/profile',
-        element: <SMProfile />
-      }
-    ]
   },
   {
     path: '/note',
